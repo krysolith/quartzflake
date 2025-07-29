@@ -21,7 +21,7 @@ jobs:
               run: go mod tidy
 
             - name: List go mod
-              run: go list -m ${{ github.repository }}@${{ github.ref_name }}
+              run: go list -m github.com/${{ github.repository }}@${{ github.ref_name }}
               env:
                 GOPROXY: proxy.golang.org
             
