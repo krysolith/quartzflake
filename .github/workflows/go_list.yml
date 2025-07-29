@@ -1,0 +1,28 @@
+name: "Log package"
+
+on:
+    release:
+        types: [created]
+
+jobs:
+    build:
+        defaults:
+            run:
+                working-directory: libs/go
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4.2.2
+
+            - name: Setup Node.js
+              uses: actions/setup-go@5.5.0
+
+            - name: Tidy dependencies
+              run: go mod tidy
+
+            - name: List go mod
+              run: go list -m ${{ github.repository }}@${{ github.ref_name }}
+              env:
+                GOPROXY: proxy.golang.org
+            
+
