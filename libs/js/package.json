@@ -1,0 +1,34 @@
+{
+  "name": "@krysolith/quartzflake",
+  "version": "1.0.0",
+  "description": "JS binding for quartzflake",
+  "keywords": [
+    "quartzflake",
+    "krysolith"
+  ],
+  "homepage": "https://github.com/Krysolith/quartzflake#readme",
+  "bugs": {
+    "url": "https://github.com/Krysolith/quartzflake/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krysolith/quartzflake.git"
+  },
+  "license": "MIT",
+  "author": "justapie",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "bench": "node benchmark.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
+    "tinybench": "^4.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}

@@ -300,4 +300,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Node
+node_modules/
+dist/
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,dotenv,go,kotlin,jetbrains+all,eclipse,visualstudiocode
