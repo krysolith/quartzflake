@@ -6,6 +6,9 @@ on:
 
 jobs:
     build:
+        defaults:
+            run:
+                working-directory: libs/js
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
