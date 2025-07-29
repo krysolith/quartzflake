@@ -2,6 +2,7 @@
   "name": "@krysolith/quartzflake",
   "version": "1.0.0",
   "description": "JS binding for quartzflake",
+  "private": false,
   "keywords": [
     "quartzflake",
     "krysolith"
